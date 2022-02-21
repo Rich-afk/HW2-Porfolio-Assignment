@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(70,60,195,255);
+    background-image: linear-gradient(to bottom right, rgba(195,143,255,255), rgba(70,60,195,255));
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: #f8f8ff;
+}
+
+nav {
+    color: #f8f8ff;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+nav a {
+    list-style-type: none;
+    padding: 2px 6px;
+    /* I don't know whether or not I should put a border */
+    /* border: 2px solid #f8f8ff; */
+    border-radius: 4px;
+    transition: all 500ms ease;
+    display: inline-block;
+    margin-left: 9px;
+}
+
+/* styling hyperlink */
+nav a:hover {
+    background-color: #f8f8ff;
+    color: black;
+}
+
+a:focus{
+    background-color: purple;
+    color: lightgrey;
+  }
+  
+  a:active{
+    background-color: darkgreen;
+    color: orange;
+  }
+  
+  a:hover,
+  a:focus {
+    transform: translateX(2px) translateY(-2px);
+  }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container{
+    height: 800px;
+    width: 100%;
+    background-image: url(wow.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
