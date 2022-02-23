@@ -4,34 +4,41 @@
     margin: 0;
 }
 
+/* header section */
 header {
-    padding: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgba(70,60,195,255);
-    background-image: linear-gradient(to bottom right, rgba(195,143,255,255), rgba(70,60,195,255));
-    color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/wow.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 100px;
     color: #f8f8ff;
+    justify-content: space-between;
+    text-shadow: 5px 4px 0px black;
+    padding-top: 15px;
+    margin-left: 20px;
 }
 
+/* for the nav */
 nav {
     color: #f8f8ff;
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 50px;
+    text-shadow: 5px 4px 0px black;
+    justify-content: space-evenly;
 }
 
 nav a {
     list-style-type: none;
     padding: 2px 6px;
-    /* I don't know whether or not I should put a border */
-    /* border: 2px solid #f8f8ff; */
     border-radius: 4px;
     transition: all 500ms ease;
     display: inline-block;
@@ -42,20 +49,16 @@ nav a {
 nav a:hover {
     background-color: #f8f8ff;
     color: black;
+    text-shadow: none;
 }
 
 a:focus{
-    background-color: purple;
-    color: lightgrey;
+    background-color: lightgrey;
+    color: rgba(70,60,195,255);
   }
   
-  a:active{
-    background-color: darkgreen;
-    color: orange;
-  }
-  
-  a:hover,
-  a:focus {
+a:hover,
+a:focus {
     transform: translateX(2px) translateY(-2px);
   }
 
@@ -64,12 +67,58 @@ a {
     text-decoration: none;
 }
 
+/* for the body of the page */
+main {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    line-height: 2;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(70,60,195,255);
+    background-image: linear-gradient(to bottom right, rgba(195,143,255,255), rgba(70,60,195,255));
+    color: #ffffff;
+    justify-content: center;
+}
+
+h2 {
+    text-shadow: 4px 2px 0px black;
+}
+
+section a {
+    display: inline-block;
+    text-decoration: dotted;
+    justify-content: center;
+    transition: all 250ms ease;
+}
+
+main img {
+    border-radius: 50%;
+    display: block;
+    margin-top: 70px;
+    width: 50%;
+    display: flex;
+    width: 20%;
+    height: auto;
+}
+
 .container{
-    height: 800px;
+    height: 1500px;
     width: 100%;
     background-image: url(wow.png);
     background-size: cover;
+    flex: auto;
     background-position: center;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
 }
 
 .navbar {
@@ -77,3 +126,51 @@ a {
     top: 0;
     width: 100%;
 }
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+    border-radius: 10%;
+}
+
+.float-right {
+    float: right;
+    margin-left: 30px;
+    border-radius: 10%;
+}
+
+button {
+    list-style-type: none;
+    padding: 2px 6px;
+    /* I don't know whether or not I should put a border */
+    border: 2px solid #f8f8ff;
+    border-radius: 4px;
+    transition: all 500ms ease;
+    display: inline-block;
+    margin-left: 9px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.sande {
+    background-color: black;
+    justify-content: center;
+}
+
+.card {
+    width: 25%;
+  flex: 0 0 300px;
+  transform: translateX(2px) translateY(-2px);
+  /* animating a transition */
+  transition: all 250ms ease-out;
+}
+
+.card:hover {
+    transform: translateX(2px) translateY(-2px);
+    box-shadow: 10px 10px 16px rgba(0,0,0,0.5);
+  }
