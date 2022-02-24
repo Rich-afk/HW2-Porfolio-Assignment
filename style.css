@@ -133,13 +133,19 @@ span {
     justify-content: space-evenly;
 }
 
+.section-small:hover{
+    color: rgba(70,60,195,255);
+    background-color: lightgrey;
+    border-radius:50%;
+}
+
 .small-song {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     justify-content: center;
     border: solid #f8f8ff;
     padding: 75px;
-    width: 33%;
+    width: 49%;
     transition: 0.3s ease;
     margin-top: 25px;
 }
