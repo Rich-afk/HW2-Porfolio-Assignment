@@ -182,7 +182,7 @@ main img {
 .container{
     height: 1500px;
     width: 100%;
-    background-image: url(wow.png);
+    background-image: url(wowresize.png);
     background-size: cover;
     flex: auto;
     background-position: center;
