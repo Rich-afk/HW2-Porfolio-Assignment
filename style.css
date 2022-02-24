@@ -57,18 +57,16 @@ a {
     text-decoration: none;
 }
 
-a:focus{
-    border-radius: 10%;
+a:hover{
+    border-radius: 5%;
     background-color: lightgrey;
     color: rgba(70,60,195,255);
   }
 
 p a{
     color: red;
-}
-
-p a:hover {
-
+    transform: translateX(2px) translateY(-2px);
+    transition: .5s ease;
 }
   
 a:hover,
@@ -133,12 +131,6 @@ span {
     justify-content: space-evenly;
 }
 
-.section-small:hover{
-    color: rgba(70,60,195,255);
-    background-color: lightgrey;
-    border-radius:50%;
-}
-
 .small-song {
     display: inline-block;
     flex-direction: row;
@@ -148,6 +140,13 @@ span {
     width: 49%;
     transition: 0.3s ease;
     margin-top: 25px;
+    transition: .8s ease;
+}
+
+.small-song:hover{
+    color: rgba(70,60,195,255);
+    background-color: lightgrey;
+    border-radius:50%;
 }
 
 section a {
@@ -225,6 +224,10 @@ footer {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+}
+
+footer a:hover{
+    
 }
 
 .icon {
