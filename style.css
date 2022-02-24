@@ -57,11 +57,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-    border-radius: 5%;
-    background-color: lightgrey;
-    color: rgba(70,60,195,255);
-  }
+/* styling the hyperlink */
 
 p a{
     color: red;
@@ -69,6 +65,12 @@ p a{
     transition: .5s ease;
 }
   
+a:hover{
+    border-radius: 5%;
+    background-color: lightgrey;
+    color: rgba(70,60,195,255);
+  }
+
 a:hover,
 a:focus {
     transform: translateX(2px) translateY(-2px);
@@ -101,10 +103,6 @@ main article {
 
 h2 {
     text-shadow: 4px 2px 0px black;
-}
-
-span {
-    display: inline;
 }
 
 .section-large {
@@ -226,10 +224,12 @@ footer {
     text-align: center;
 }
 
+/* hoverstate would discolor, so I changed it so that the hoverstate is invisible */
 footer a:hover{
-    
+    background-color: #fff;
 }
 
+/* resizing the footer images */
 .icon {
     height: 40px;
     width: 40px;
