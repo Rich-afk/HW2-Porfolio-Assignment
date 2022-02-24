@@ -52,21 +52,29 @@ nav a:hover {
     text-shadow: none;
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 a:focus{
     border-radius: 10%;
     background-color: lightgrey;
     color: rgba(70,60,195,255);
   }
+
+p a{
+    color: red;
+}
+
+p a:hover {
+
+}
   
 a:hover,
 a:focus {
     transform: translateX(2px) translateY(-2px);
   }
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
 /* for the body of the page */
 main {
@@ -97,10 +105,14 @@ h2 {
     text-shadow: 4px 2px 0px black;
 }
 
+span {
+    display: inline;
+}
+
 .section-large {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     border: solid #f8f8ff;
     padding-top: 75px;
     padding-bottom: 75px;
@@ -111,8 +123,6 @@ h2 {
 .section-large:hover{
     color: rgba(70,60,195,255);
     background-color: black;
-    background-size:contain;
-    background-position:center;
     border-radius:50%;
 }
 
