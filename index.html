@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Rich Kim | Portfolio</title>
 </head>
@@ -17,6 +18,7 @@
             <a href="#">HOME</a>
             <a href="#ABOUT">ABOUT</a>
             <a href="#WORK">WORK</a>
+            <a href="COMPSCIWORKS">COMP SCI</a>
             <a href="#CONNECT">CONNECT</a>
         </nav>
     </header>
@@ -31,12 +33,13 @@
                 single 'Secret,' which was made with my fellow artist Stemo.
             </p>
         </article>
+
         <article id="WORK" class="singles">
             <h2>Some of my Singles</h2>
             <a href="https://open.spotify.com/track/1ZR9io66SxC08HQUcFZerO" target="_blank">
                 <!-- used section to have more control over styling -->
                 <section class="section-large">
-                    <img src="./images/odyssey cover for website.jpg" alt="Odyssey" />
+                    <img src="./images/odyssey cover for website.jpg" class="img-fluid" alt="Odyssey" />
                     Odyssey
                 </section>
             </a>
@@ -53,6 +56,31 @@
                 </section>
             </a>
         </article>
+
+        <article id="COMPSCIWORKS">
+            <h2>COMP SCI WORKS</h2>
+            <!-- used p to specifically style the links -->
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div id="mealtime"class="card-body">
+                        <h5 class="card-title">Mealtime Magic</h5>
+                        <p class="card-text">Find your next meal plan</p>
+                        <img src="./images/index.png" alt="mealtime_index">
+                        <a href="https://rich-afk.github.io/interactive-recipe-book/" class="btn btn-primary" target="_blank">Take me there!</a>
+                        <a href="https://github.com/Rich-afk/interactive-recipe-book" class="btn btn-primary" target="_blank">Github Repo</a>
+                    </div>
+              </div>
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div id="mealtime"class="card-body">
+                    <h5 class="card-title">Weather Dashboard</h5>
+                    <p class="card-text">What's the weather like?</p>
+                    <img src="./images/readMeImg.png" alt="weather_dashboard">
+                    <a href="https://rich-afk.github.io/weather-dashboard/" class="btn btn-primary" target="_blank">Take me there!</a>
+                    <a href="https://github.com/Rich-afk/weather-dashboard" class="btn btn-primary" target="_blank">Github Repo</a>
+                </div>
+          </div>
+        </article>
+
         <article id="CONNECT">
             <img src="./images/contact for website.jpg" alt="CONNECT" class="float-left">
             <h2>Connect</h2>
@@ -62,6 +90,7 @@
                     target="_blank">apple music</a>, <a href="https://www.youtube.com/channel/UC8oc8NpnE8nv21GFi5ih8LA"
                     target="_blank">youtube</a>, and all other music vending platforms.
             </p>
+            <iframe src="./resume.pdf" width="100%" height="750px"></iframe>
         </article>
     </main>
 
